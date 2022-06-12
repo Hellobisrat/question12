@@ -1,0 +1,27 @@
+Question #12
+function DNA(){
+    for (i=0; i<arguments.length; i++){
+        if (arguments[i]==='A'){
+            arguments[i]='T'
+        }else if (arguments[i]==='T') {
+            arguments[i]='A'
+        }else if (arguments[i]==='C') {
+            arguments[i]='G'
+        }else if (arguments[i]==='G') {
+            arguments[i]='C'
+        }
+        console.log(arguments[i])
+    }
+}
+
+DNA('G','C','A','T');
+PS C:\Users\bisrat\Desktop\source> node pracargu.js
+C
+G
+T
+A
+PS C:\Users\bisrat\Desktop\source> node pracargu.js
+T
+G
+C
+A
